@@ -211,7 +211,7 @@ const AddUser = () => {
         password = generateRandomPassword();
 
         // אם לא קיים – יוצרים משתמש חדש
-        const registerResponse = await axios.post(`https://localhost:7287/api/auth/register`, {
+          await axios.post(`https://localhost:7287/api/auth/register`, {
           firstName: name,           // מאתרים את שם המשתמש
           lastName: "---",        // שם משפחה (תוכל לשנות לפי הצורך)
           previousLastName: "---", // שם משפחה נוסף אם יש לך מידע

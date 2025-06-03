@@ -7,7 +7,6 @@ import {
   Box,
   Container,
   Paper,
-  useTheme,
   Fade,
   alpha,
 } from "@mui/material"
@@ -25,11 +24,7 @@ const float = keyframes`
   100% { transform: translateY(0px); }
 `
 
-const pulse = keyframes`
-  0% { opacity: 0.6; }
-  50% { opacity: 0.9; }
-  100% { opacity: 0.6; }
-`
+
 
 const shimmer = keyframes`
   0% { background-position: -200% 0; }
@@ -37,7 +32,9 @@ const shimmer = keyframes`
 `
 
 // Decorative element
-const DecorativeCircle = ({ size, color, top, left, right, bottom, delay }) => {
+const DecorativeCircle = ({ size, color, top, left, right, bottom, delay }:{size:any
+  ,color:any,top:any,left:any,right:any,bottom:any,delay:any
+}) => {
   return (
     <Box
       sx={{
@@ -65,7 +62,7 @@ const HomePage = () => {
   const [currentPage, setCurrentPage] = useState("home")
   const [showProfileUpdate, setShowProfileUpdate] = useState(false)
   const { user } = useAuth() // קבלת המשתמש מה-context
-  const theme = useTheme()
+  
 
   // Vibrant colors
   const vibrantPurple = "#8A2BE2" // BlueViolet
@@ -108,10 +105,10 @@ const HomePage = () => {
       }}
     >
       {/* Decorative elements with vibrant colors */}
-      <DecorativeCircle size="300px" color={vibrantPurple} top="-5%" right="-5%" delay={0} />
-      <DecorativeCircle size="250px" color={vibrantPink} bottom="-10%" left="-10%" delay={500} />
-      <DecorativeCircle size="200px" color={vibrantBlue} top="60%" right="-5%" delay={1000} />
-      <DecorativeCircle size="180px" color={vibrantTeal} top="20%" left="-5%" delay={1500} />
+      <DecorativeCircle size="300px" color={vibrantPurple} top="-5%" right="-5%" delay={0} left={undefined} bottom={undefined} />
+      <DecorativeCircle size="250px" color={vibrantPink} bottom="-10%" left="-10%" delay={500} top={undefined} right={undefined} />
+      <DecorativeCircle size="200px" color={vibrantBlue} top="60%" right="-5%" delay={1000} left={undefined} bottom={undefined} />
+      <DecorativeCircle size="180px" color={vibrantTeal} top="20%" left="-5%" delay={1500} right={undefined} bottom={undefined} />
 
       <Container maxWidth="sm">
         {/* Back button when not on home page */}
