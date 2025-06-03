@@ -1,0 +1,60 @@
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\bin\Debug\net7.0\Server.Service.deps.json
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\bin\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\bin\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\bin\Debug\net7.0\Server.Core.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\bin\Debug\net7.0\Server.Core.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.AssemblyReference.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfoInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfo.cs
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CopyComplete
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\refint\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\server\Server.Service\obj\Debug\net7.0\ref\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\bin\Debug\net7.0\Server.Service.deps.json
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\bin\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\bin\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\bin\Debug\net7.0\Server.Core.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\bin\Debug\net7.0\Server.Core.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.csproj.AssemblyReference.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfoInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfo.cs
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CopyComplete
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\refint\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\practicum\‏‏server - עותק (2)\Server.Service\obj\Debug\net7.0\ref\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\bin\Debug\net7.0\Server.Service.deps.json
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\bin\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\bin\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\bin\Debug\net7.0\Server.Core.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\bin\Debug\net7.0\Server.Core.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.AssemblyReference.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfoInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfo.cs
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\refint\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\ref\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\Server2\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CopyComplete
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\bin\Debug\net7.0\Server.Service.deps.json
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\bin\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\bin\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\bin\Debug\net7.0\Server.Core.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\bin\Debug\net7.0\Server.Core.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.AssemblyReference.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfoInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfo.cs
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CopyComplete
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\refint\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.pdb
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\ref\Server.Service.dll
