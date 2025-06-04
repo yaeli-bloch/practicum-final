@@ -48,7 +48,7 @@ const Login = ({ onLoginSuccess }: { onLoginSuccess: () => void }) => {
     setErrorMessage('');
 
     try {
-         const response = await axios.post('https://localhost:7287/api/auth/login', {
+         const response = await axios.post('https://shareyourjoy-server.onrender.com/api/auth/login', {
         email,
         password,
       }, {
