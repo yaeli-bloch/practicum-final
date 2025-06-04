@@ -338,7 +338,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
       const fileDownloadUrl = presignedUrl.split("?")[0]
 
       // פענוח טקסט מהתמונה
-      const ocrResponse = await axios.post("https://shareyourjoy-server.onrender.com/files/read-text", null, {
+      const ocrResponse = await axios.post("https://shareyourjoy-server.onrender.com/api/files/read-text", null, {
         params: { imageUrl: fileDownloadUrl },
       })
 
