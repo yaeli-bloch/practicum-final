@@ -124,7 +124,6 @@ app.UseCors("AllowAllOriginsWithCredentials");
 app.UseHttpsRedirection();
 app.UseAuthentication();  // ה-Middleware של האימות
 app.UseAuthorization();   // ה-Middleware של ההרשאות
-
 app.MapControllers();  // הגדרת ה-controllers
-
+app.MapGet("/", () => "AuthServer API is running!");
 app.Run();
