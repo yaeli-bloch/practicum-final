@@ -321,7 +321,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
     setIsUploading(true)
 
     try {
-      const response = await axios.get("https://localhost:7287/api/upload/presigned-url", {
+      const response = await axios.get("https://shareyourjoy-server.onrender.com/api/upload/presigned-url", {
         params: { fileName: file.name },
       })
 
@@ -338,7 +338,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
       const fileDownloadUrl = presignedUrl.split("?")[0]
 
       // פענוח טקסט מהתמונה
-      const ocrResponse = await axios.post("https://localhost:7287/api/files/read-text", null, {
+      const ocrResponse = await axios.post("https://shareyourjoy-server.onrender.com/files/read-text", null, {
         params: { imageUrl: fileDownloadUrl },
       })
 
@@ -357,7 +357,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
         updatedAt: new Date(),
       }
 
-      await axios.post("https://localhost:7287/api/files", fileData)
+      await axios.post("https://shareyourjoy-server.onrender.com/api/files", fileData)
 
       setUploadSuccess(true)
       setTimeout(() => {

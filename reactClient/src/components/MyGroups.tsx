@@ -76,7 +76,7 @@ const MyGroups = () => {
 
     setIsLoading(true);
     axios
-      .get(`https://localhost:7287/api/user/${user.id}/groups`)
+      .get(`https://shareyourjoy-server.onrender.com/api/user/${user.id}/groups`)
       .then((response) => {
         setGroups(response.data);
         setIsLoading(false);

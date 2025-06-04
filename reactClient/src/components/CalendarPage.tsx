@@ -268,7 +268,7 @@ const CalendarPage = () => {
     const fetchFiles = async () => {
       try {
         // קריאת API אמיתית לקבלת הנתונים
-        const res = await axios.get(`https://localhost:7287/api/Group/${groupId}/files`)
+        const res = await axios.get(`https://shareyourjoy-server.onrender.com/api/Group/${groupId}/files`)
         setFiles(res.data)
       } catch (err) {
         console.error("Error loading files", err)

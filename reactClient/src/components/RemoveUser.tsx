@@ -142,7 +142,7 @@ const RemoveUser: React.FC = () => {
     setMessage('');
 
     try {
-      await axios.delete(`https://localhost:7287/api/group/${groupId}/users/${mail}`);
+      await axios.delete(`https://shareyourjoy-server.onrender.com/api/group/${groupId}/users/${mail}`);
       setMessage('המשתמש הוסר בהצלחה.');
       setIsSuccess(true);
 

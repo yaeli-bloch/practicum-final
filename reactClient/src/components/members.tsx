@@ -104,7 +104,7 @@ const MembersOfGroup = () => {
     const fetchUsers = async () => {
       setIsLoading(true)
       try {
-        const response = await fetch(`https://localhost:7287/api/User/byGroup/${groupId}`)
+        const response = await fetch(`https://shareyourjoy-server.onrender.com/api/User/byGroup/${groupId}`)
         const rawData = await response.json()
 
         const formattedData = rawData.map((user: any) => ({
@@ -133,7 +133,7 @@ const MembersOfGroup = () => {
     if (!selectedUser) return
     setIsSending(true)
     try {
-      await fetch("https://localhost:7287/api/mail/send-email", {
+      await fetch("https://shareyourjoy-server.onrender.com/api/mail/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

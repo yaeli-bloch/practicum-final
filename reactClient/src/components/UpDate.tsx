@@ -124,7 +124,7 @@ const UserProfileUpdate: React.FC<Props> = ({ userId, onClose }) => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`https://localhost:7287/api/user/${userId}`);
+        const response = await axios.get(`https://shareyourjoy-server.onrender.com/api/user/${userId}`);
         setUser({
           Id: response.data.id, // שים לב ש-C# שולח עם אות קטנה id
           LastName: response.data.lastName || "",
@@ -156,7 +156,7 @@ const UserProfileUpdate: React.FC<Props> = ({ userId, onClose }) => {
       console.log("id מהכתובת:", userId);
       console.log("id בגוף:", user.Id);
 
-      await axios.put(`https://localhost:7287/api/user/${userId}`, user);
+      await axios.put(`https://shareyourjoy-server.onrender.com/api/user/${userId}`, user);
       setMessage("הפרטים עודכנו בהצלחה!");
       setTimeout(() => {
         onClose();

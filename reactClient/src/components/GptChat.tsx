@@ -225,7 +225,7 @@ const GptChat = ({ groupId }: { groupId: number }) => {
   useEffect(() => {
     const fetchGroupContent = async () => {
       try {
-        const response = await axios.get(`https://localhost:7287/api/Group/${groupId}/files`)
+        const response = await axios.get(`https://shareyourjoy-server.onrender.com/api/Group/${groupId}/files`)
         const combinedText = response.data.map((f: any) => `כותרת: ${f.title}\nתוכן: ${f.content}`).join("\n\n")
         setGroupContent(combinedText)
 
@@ -269,7 +269,7 @@ const GptChat = ({ groupId }: { groupId: number }) => {
     }, 500)
 
     try {
-      const response = await axios.post("https://localhost:7287/api/chat", {
+      const response = await axios.post("https://shareyourjoy-server.onrender.com/api/chat", {
         Prompt: `המידע הבא לקוח מקבצים של קבוצה מס' ${groupId}:\n${groupContent}\nענה אך ורק על סמך מידע זה.`,
         Question: currentQuestion,
       })

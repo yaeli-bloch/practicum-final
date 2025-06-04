@@ -300,7 +300,7 @@ const GroupPage = () => {
   useEffect(() => {
     const fetchGroupDetails = async () => {
       try {
-        const response = await axios.get(`https://localhost:7287/api/Group/${groupId}`)
+        const response = await axios.get(`https://shareyourjoy-server.onrender.com/api/Group/${groupId}`)
         setGroup(response.data)
       } catch (error) {
         console.error("שגיאה בשליפת הקבוצה:", error)

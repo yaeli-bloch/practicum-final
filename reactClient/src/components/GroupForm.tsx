@@ -24,7 +24,7 @@ const GroupForm = ({ onClose }: { onClose: () => void }) => {
       const token = localStorage.getItem("authToken");  // שליפה של הטוקן מ-localStorage
 
       const response = await axios.post(
-        "https://localhost:7287/api/Group",  // כתובת ה-API שלך
+        "https://shareyourjoy-server.onrender.com/api/Group",  // כתובת ה-API שלך
         newGroup,  // הנתונים של הקבוצה
         {
           headers: {
