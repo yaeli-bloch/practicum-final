@@ -82,8 +82,8 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] GptRequest gptRequest)
         {
-            var myApiKey = _config["OpenAi"].Trim();            
-            Console.WriteLine($"API key length: {myApiKey.Length}");
+            var myApiKey = _config["OpenAi"];
+
             if (string.IsNullOrWhiteSpace(myApiKey))
                 return StatusCode(500, "חסר מפתח API.");
 

@@ -336,16 +336,20 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
       })
 
       const fileDownloadUrl = presignedUrl.split("?")[0]
-
-      // פענוח טקסט מהתמונה
+      let extractedText=""
+     try{
       const ocrResponse = await axios.post("https://shareyourjoy-server.onrender.com/api/files/read-text", null, {
         params: { imageUrl: fileDownloadUrl },
       })
 
-      const extractedText = ocrResponse.data
+       extractedText = ocrResponse.data
       console.log(extractedText + "---content")
       setContent(extractedText)
-
+     }
+     catch{
+      extractedText="bla bla"
+      console.log("ocr failed");
+     }
       // שליחת הנתונים לשרת
       const fileData = {
         title,
