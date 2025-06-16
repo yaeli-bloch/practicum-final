@@ -328,6 +328,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
 
       const presignedUrl = response.data.url
       const contentTypeFromServer = response.data.contentType
+      console.log(contentTypeFromServer)
       await axios.put(presignedUrl, file, {
         headers: { "Content-Type": contentTypeFromServer || "application/octet-stream"},
         onUploadProgress: (progressEvent) => {
