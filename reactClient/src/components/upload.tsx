@@ -322,7 +322,7 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
 
     try {
       const response = await axios.get("https://shareyourjoy-server.onrender.com/api/upload/presigned-url", {
-        params: { fileName: file.name },
+        params: { fileName: file.name, fileType : file.type},
       })
 
       const presignedUrl = response.data.url
