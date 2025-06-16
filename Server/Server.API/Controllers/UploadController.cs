@@ -20,19 +20,36 @@ namespace Server.API.Controllers
         }
 
         [HttpGet("presigned-url")]
-        public async Task<IActionResult> GetPresignedUrl([FromQuery] string fileName)
+        public async Task<IActionResult> GetPresignedUrl([FromQuery] string fileName, [FromQuery] string fileType)
         {
+            string contentType = fileType.ToLower() switch
+            {
+                "application/pdf" => "application/pdf",
+                "pdf" => "application/pdf",
+                "image/jpeg" => "image/jpeg",
+                "jpeg" => "image/jpeg",
+                "jpg" => "image/jpeg",
+                "image/png" => "image/png", // הוספת תמיכה לקובצי PNG
+                "png" => "image/png",       // הוספת תמיכה לקובצי PNG
+                "application/msword" => "application/msword", // הוספת תמיכה לקובצי Word
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document" => "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // עבור קובצי Word ב-Office 2007 ואילך
+                "doc" => "application/msword", // הוספת תמיכה לקובצי Word
+                "docx" => "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // הוספת תמיכה לקובצי Word
+                _ => "application/octet-stream" // ברירת מחדל לסוגים שאינם מזוהים
+            };
+
+            Console.WriteLine(contentType, " content type");
             var request = new GetPreSignedUrlRequest
             {
                 BucketName = _bucketName, 
                 Key = fileName,   
-                Verb = HttpVerb.PUT,              // מבצע PUT (שימוש בהעלאת קובץ)
+                Verb = HttpVerb.PUT,             
                 Expires = DateTime.UtcNow.AddMinutes(5),  // הקישור יפוג אחרי 5 דקות
-                ContentType = "image/jpeg" 
+                ContentType = contentType
             };
 
             string url = _s3Client.GetPreSignedURL(request); // קבלת ה-URL
-            return Ok(new { url }); // מחזירים את ה-URL
+            return Ok(new { url ,contentType}); // מחזירים את ה-URL
         }
         [HttpGet("download-url")]
         public async Task<string> GetDownloadUrlAsync(string fileName)

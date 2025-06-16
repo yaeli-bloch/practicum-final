@@ -321,14 +321,15 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
     setIsUploading(true)
 
     try {
+      console.log("type",file.type);
       const response = await axios.get("https://shareyourjoy-server.onrender.com/api/upload/presigned-url", {
         params: { fileName: file.name, fileType : file.type},
       })
 
       const presignedUrl = response.data.url
-
+      const contentTypeFromServer = response.data.contentType
       await axios.put(presignedUrl, file, {
-        headers: { "Content-Type": file.type },
+        headers: { "Content-Type": contentTypeFromServer || "application/octet-stream"},
         onUploadProgress: (progressEvent) => {
           const percent = Math.round((progressEvent.loaded * 100) / (progressEvent.total || 1))
           setProgress(percent)
