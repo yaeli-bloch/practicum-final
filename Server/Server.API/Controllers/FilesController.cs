@@ -15,10 +15,12 @@ namespace Server.API.Controllers
     public class FilesController : ControllerBase
     {
         private readonly IFileService _FileService;
+        private readonly ILogger<FilesController> _logger;
 
-        public FilesController(IFileService FileService)
+        public FilesController(IFileService FileService, ILogger<FilesController> logger)
         {
             _FileService = FileService;
+            _logger= logger;
         }       
 
         [HttpGet]
@@ -76,7 +78,7 @@ namespace Server.API.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("ocr :  "+ex.Message);
+                _logger.LogError(ex, "Error occurred in OCR: " + ex.Message);
                 return StatusCode(500, $"Error processing image: {ex.Message}");
 
             }
