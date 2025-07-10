@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     libleptonica-dev
 
 # העתקת מפתח ההתקנה של notesalexp
-COPY Api/alexp_key.asc /tmp/alexp_key.asc
+COPY Server.API/alexp_key.asc /tmp/alexp_key.asc
 
 # הוספת המפתח למערכת המפתחות
 RUN apt-key add /tmp/alexp_key.asc && rm /tmp/alexp_key.asc
