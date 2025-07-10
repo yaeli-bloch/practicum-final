@@ -34,7 +34,7 @@ import EventIcon from "@mui/icons-material/Event"
 import ImageIcon from "@mui/icons-material/Image"
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday"
 import EventAvailableIcon from "@mui/icons-material/EventAvailable"
-import { useRef } from "react"
+
 const CalendarPage = () => {
   const [files, setFiles] = useState<any[]>([])
   const [selectedDate, setSelectedDate] = useState<string | null>(null)
@@ -44,7 +44,7 @@ const CalendarPage = () => {
 
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth())
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear())
-  const eventsSectionRef = useRef<HTMLDivElement | null>(null)
+  //const eventsSectionRef = useRef<HTMLDivElement | null>(null)
   const location = useLocation()
     const groupId = location.state?.groupId
   const theme = useTheme()
