@@ -76,7 +76,9 @@ namespace Server.API.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine("ocr :  "+ex.Message);
                 return StatusCode(500, $"Error processing image: {ex.Message}");
+
             }
            
 
