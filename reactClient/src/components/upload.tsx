@@ -448,7 +448,8 @@ const Uploader = ({ GroupId, onUploadFinish }: { GroupId: number; onUploadFinish
           <Grow in={!showForm} timeout={800}>
             <Box
               sx={{
-                width: "100%",
+                width: "90%",
+                maxWidth: "90%", 
                 padding: "30px 20px",
                 backgroundColor: dragActive ? alpha(luxuryPurple, 0.1) : "white",
                 borderRadius: "12px",
