@@ -1104,6 +1104,15 @@
           }
         }
       },
+      "OpenCvSharp4.runtime.ubuntu.22.04-x64/4.6.0-SNAPSHOT": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/ubuntu.22.04-x64/native/libOpenCvSharpExtern.so": {
+            "assetType": "native",
+            "rid": "ubuntu.22.04-x64"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -3436,6 +3445,18 @@
         "opencvsharp4.nuspec"
       ]
     },
+    "OpenCvSharp4.runtime.ubuntu.22.04-x64/4.6.0-SNAPSHOT": {
+      "sha512": "Zh24714WI0pMDMRMt7XfVaYx2fe1J8v6JGjePxAcO5+WhVnu07mljaQgohFT2ZEnboj1Ss8ZejMGSpbmxMks9Q==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.ubuntu.22.04-x64/4.6.0-snapshot",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "opencvsharp4.runtime.ubuntu.22.04-x64.4.6.0-snapshot.nupkg.sha512",
+        "opencvsharp4.runtime.ubuntu.22.04-x64.nuspec",
+        "runtimes/ubuntu.22.04-x64/native/libOpenCvSharpExtern.so"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
       "sha512": "Qk5WB/skSZet5Yrz6AN2ywjZaB1pxfAmvQ+5I4khTkLwwIamI4QJoH2NphCWLFQL+2ar8HvsNCTmwYk0qhqL0w==",
       "type": "package",
@@ -4496,6 +4517,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.18.1",
       "OpenCvSharp4 >= 4.11.0.20250507",
+      "OpenCvSharp4.runtime.ubuntu.22.04-x64 >= 4.6.0-snapshot",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Server.Core >= 1.0.0",
       "Server.Data >= 1.0.0",
@@ -4607,6 +4629,10 @@
           "OpenCvSharp4": {
             "target": "Package",
             "version": "[4.11.0.20250507, )"
+          },
+          "OpenCvSharp4.runtime.ubuntu.22.04-x64": {
+            "target": "Package",
+            "version": "[4.6.0-snapshot, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",

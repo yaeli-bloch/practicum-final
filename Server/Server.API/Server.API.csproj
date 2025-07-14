@@ -44,7 +44,10 @@
 		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
-		<PackageReference Include="Tesseract" Version="5.2.0" />
+		<PackageReference Include="Tesseract" Version="5.2.0" />		
+		<PackageReference Include="OpenCvSharp4.runtime.ubuntu.22.04-x64" Version="4.6.0-snapshot" />
+		
+
 	</ItemGroup>
 
   <ItemGroup>

@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
     libc6-dev \
     libgdiplus \
     libx11-dev \
-    libleptonica-dev
+    libleptonica-dev\
+    libopencv-dev
 
 # העתקת מפתח ההתקנה של notesalexp
 COPY Server.API/alexp_key.asc /tmp/alexp_key.asc

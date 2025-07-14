@@ -939,7 +939,10 @@
       },
       "Server.Core/1.0.0": {
         "runtime": {
-          "Server.Core.dll": {}
+          "Server.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Server.Data/1.0.0": {
@@ -951,7 +954,10 @@
           "Tesseract": "5.2.0"
         },
         "runtime": {
-          "Server.Data.dll": {}
+          "Server.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Server.Service/1.0.0": {
@@ -963,7 +969,10 @@
           "System.IdentityModel.Tokens.Jwt": "8.12.0"
         },
         "runtime": {
-          "Server.Service.dll": {}
+          "Server.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

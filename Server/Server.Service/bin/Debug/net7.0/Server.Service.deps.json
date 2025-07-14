@@ -182,7 +182,10 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Server.Core/1.0.0": {
         "runtime": {
-          "Server.Core.dll": {}
+          "Server.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

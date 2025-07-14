@@ -53,8 +53,9 @@ D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Se
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfoInputs.cache
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.AssemblyInfo.cs
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CoreCompileInputs.cache
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.csproj.CopyComplete
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.dll
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\refint\Server.Service.dll
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.pdb
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\ref\Server.Service.dll
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.Service.sourcelink.json
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Service\obj\Debug\net7.0\Server.S.63FA4F48.Up2Date
