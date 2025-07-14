@@ -36,7 +36,9 @@ RUN mkdir -p /app/x64 && \
 
 # משתנים סביבתיים
 ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
-ENV LD_LIBRARY_PATH=/app/x64:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu
+#ENV LD_LIBRARY_PATH=/app/x64:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu
+ENV LD_LIBRARY_PATH=/app/x64:/app/runtimes/ubuntu.22.04-x64/native:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu
+
 
 EXPOSE 80
 EXPOSE 443
@@ -58,4 +60,5 @@ RUN dotnet publish "Server.API.csproj" -c Release -o /app/publish /p:UseAppHost=
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY Server.API/runtimes /app/runtimes
 ENTRYPOINT ["dotnet", "Server.API.dll"]
