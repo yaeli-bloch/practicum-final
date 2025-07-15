@@ -3,7 +3,7 @@ using Server.Core.Services;
 using Server.Core.Models;
 using Server.API.ModelsDto;
 using Tesseract;
-using OpenCvSharp;
+
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -59,6 +59,8 @@ namespace Server.API.Controllers
             string resultText;
             try
             {
+                var handler = new HttpClientHandler();
+                handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
                 // הורדת התמונה מה-URL
                 using (var httpClient = new HttpClient())
                 {
@@ -69,8 +71,9 @@ namespace Server.API.Controllers
                     await System.IO.File.WriteAllBytesAsync(tempFilePath, imageBytes);
 
                     // קריאת הטקסט מהתמונה
-                    var processedImagePath = PreprocessImage(tempFilePath);
-                    resultText = ExtractTextFromImage(processedImagePath);
+                    //var processedImagePath = PreprocessImage(tempFilePath);
+                    //resultText = ExtractTextFromImage(processedImagePath);
+                    resultText = ExtractTextFromImage(tempFilePath);
 
                     // מחיקת התמונה מהשרת לאחר השימוש
                     System.IO.File.Delete(tempFilePath);
@@ -103,7 +106,10 @@ namespace Server.API.Controllers
         }
         private string ExtractTextFromImage(string imagePath)
         {
-            using (var engine = new TesseractEngine(@"./tessdata", "heb", EngineMode.Default))
+            var tessdataPath = Environment.GetEnvironmentVariable("TESSDATA_PREFIX");
+            Console.WriteLine($"TESSDATA_PREFIX: {tessdataPath}");
+           // using (var engine = new TesseractEngine(@"./tessdata", "heb", EngineMode.Default))
+            using (var engine = new TesseractEngine(tessdataPath, "heb", EngineMode.Default))
             {
                 using (var img = Pix.LoadFromFile(imagePath))
                 {
@@ -115,27 +121,27 @@ namespace Server.API.Controllers
                 }
             }
         }
-        private string PreprocessImage(string inputPath)
-        {
-            var outputPath = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + "_processed.jpg");
+        //private string PreprocessImage(string inputPath)
+        //{
+        //    var outputPath = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + "_processed.jpg");
 
-            using (var src = new OpenCvSharp.Mat(inputPath, OpenCvSharp.ImreadModes.Grayscale))
-            {
-                // שיפור ניגודיות
-                OpenCvSharp.Cv2.EqualizeHist(src, src);
+        //    using (var src = new OpenCvSharp.Mat(inputPath, OpenCvSharp.ImreadModes.Grayscale))
+        //    {
+        //        // שיפור ניגודיות
+        //        OpenCvSharp.Cv2.EqualizeHist(src, src);
 
-                // סינון רעש עם blur
-                OpenCvSharp.Cv2.GaussianBlur(src, src, new OpenCvSharp.Size(3, 3), 0);
+        //        // סינון רעש עם blur
+        //        OpenCvSharp.Cv2.GaussianBlur(src, src, new OpenCvSharp.Size(3, 3), 0);
 
-                // סף בינארי - הופך את התמונה לשחור-לבן
-                OpenCvSharp.Cv2.Threshold(src, src, 0, 255, OpenCvSharp.ThresholdTypes.Binary | OpenCvSharp.ThresholdTypes.Otsu);
+        //        // סף בינארי - הופך את התמונה לשחור-לבן
+        //        OpenCvSharp.Cv2.Threshold(src, src, 0, 255, OpenCvSharp.ThresholdTypes.Binary | OpenCvSharp.ThresholdTypes.Otsu);
 
-                // שמירה לקובץ חדש
-                OpenCvSharp.Cv2.ImWrite(outputPath, src);
-            }
+        //        // שמירה לקובץ חדש
+        //        OpenCvSharp.Cv2.ImWrite(outputPath, src);
+        //    }
 
-            return outputPath;
-        }
+        //    return outputPath;
+        //}
 
     }
 }
