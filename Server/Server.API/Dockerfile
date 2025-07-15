@@ -26,7 +26,7 @@ RUN echo "deb https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/ $(lsb_re
     apt-get update && apt-get install -y \
     tesseract-ocr \
     tesseract-ocr-heb
-
+COPY Server.API/runtimes /app/runtimes
 # קישורים לספריות ש-Tesseract .NET מצפה להן
 RUN mkdir -p /app/x64 && \
     ln -s /usr/lib/x86_64-linux-gnu/liblept.so.5 /app/x64/libleptonica-1.82.0.so && \
