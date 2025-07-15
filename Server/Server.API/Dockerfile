@@ -33,7 +33,7 @@ RUN mkdir -p /app/x64 && \
     ln -s /usr/lib/x86_64-linux-gnu/libtesseract.so.5 /app/x64/libtesseract51.so && \
     ln -s /usr/lib/x86_64-linux-gnu/libtesseract.so.5 /app/x64/libtesseract50.so && \
     ln -s /lib/x86_64-linux-gnu/libdl.so.2 /app/x64/libdl.so
-
+RUN ln -s /app/runtimes/ubuntu.22.04-x64/native/libOpenCvSharpExtern.so /app/x64/OpenCvSharpExtern.so
 # משתנים סביבתיים
 ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
 #ENV LD_LIBRARY_PATH=/app/x64:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu
