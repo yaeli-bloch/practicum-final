@@ -269,10 +269,16 @@ const GptChat = ({ groupId }: { groupId: number }) => {
     }, 500)
 
     try {
+      const cleanedGroupContent = groupContent.replace(/[\u0000-\u001F\u007F]/g, " ").trim()
+
       const response = await axios.post("https://shareyourjoy-server.onrender.com/api/chat", {
-        Prompt: `המידע הבא לקוח מקבצים של קבוצה מס' ${groupId}:\n${groupContent}\nענה אך ורק על סמך מידע זה.`,
+        Prompt: `המידע הבא לקוח מקבצים של קבוצה מס' ${groupId}:\n${cleanedGroupContent}\nענה אך ורק על סמך מידע זה.`,
         Question: currentQuestion,
-      })
+      } ,{
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
 
       const content = response.data.choices?.[0]?.message?.content
       const answerText = content || "אין לי תשובה לשאלה זו על סמך המידע שבקבוצה."
