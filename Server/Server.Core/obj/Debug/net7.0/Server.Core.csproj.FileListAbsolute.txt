@@ -53,4 +53,4 @@ D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Co
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Core\obj\Debug\net7.0\Server.Core.pdb
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Core\obj\Debug\net7.0\Server.Core.genruntimeconfig.cache
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Core\obj\Debug\net7.0\ref\Server.Core.dll
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Core\obj\Debug\net7.0\Server.Core.sourcelink.json
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Core\obj\Debug\net7.0\Server.Core.csproj.AssemblyReference.cache

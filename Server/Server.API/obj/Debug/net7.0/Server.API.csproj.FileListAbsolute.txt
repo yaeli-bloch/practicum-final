@@ -223,8 +223,5 @@ D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.AP
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\Server.API.pdb
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\Server.API.genruntimeconfig.cache
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\ref\Server.API.dll
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\bin\Debug\net7.0\Server.API.staticwebassets.endpoints.json
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\Server.API.sourcelink.json
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\staticwebassets.build.endpoints.json
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\staticwebassets\msbuild.Server.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\Server.API.csproj.Up2Date
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\bin\Debug\net7.0\runtimes\ubuntu.22.04-x64\native\libOpenCvSharpExtern.so
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.API\obj\Debug\net7.0\Server.API.csproj.CopyComplete

@@ -81,5 +81,4 @@ D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Da
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\Server.Data.pdb
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\Server.Data.genruntimeconfig.cache
 D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\ref\Server.Data.dll
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\Server.Data.sourcelink.json
-D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\Server.D.41DF33C7.Up2Date
+D:\Users\User\Desktop\יעלוש שנה ב'\ShareYourJoy-finish\Server\Server.Data\obj\Debug\net7.0\Server.Data.csproj.CopyComplete
